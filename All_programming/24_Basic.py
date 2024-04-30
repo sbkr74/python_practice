@@ -15,8 +15,23 @@ Example:
 5 = 30,55,65
 6 = 12,30
 7 = none
-7  = none 
+8 = none 
 .
 .
 .
 '''
+usr_list = [12,13,39,30,55,65]
+# for item in usr_list:
+#     for i in range(2,13):
+#         if(item%i==0):
+#             print(i,"=",item)
+
+for i in range(2,14):
+    div = []
+    for item in usr_list:
+        if(item%i==0):
+            # print(i,"=",item)
+            div.append(item)
+    if div == []:
+        continue
+    print(i,"=",div)
