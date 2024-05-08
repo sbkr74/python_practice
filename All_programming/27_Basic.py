@@ -2,14 +2,21 @@
 # 54 and 24 is 6
 num1 = int(input("first numbeer:"))
 num2 = int(input("second numbeer:"))
-k=[]
-for i in range(1,num1):
-    if(num1%i==0):
-        k.append(i)
-l=[]
-for j in range(1,num2):
-    if(num2%j==0):
-        l.append(j)
-commons = set(k) & set(l)
-print("HCF of",num1,"and",num2,"is",max(commons))
-
+# k=[]
+# for i in range(1,num1):
+#     if(num1%i==0):
+#         k.append(i)
+# l=[]
+# for j in range(1,num2):
+#     if(num2%j==0):
+#         l.append(j)
+# commons = set(k) & set(l)
+# print("HCF of",num1,"and",num2,"is",max(commons))
+if num1<num2:
+    smaller = num1
+else:
+    smaller = num2
+for i in range(1,smaller):
+    if num1%i == 0 and num2%i == 0:
+        hcf = i
+print(hcf)
