@@ -14,3 +14,14 @@ if(usr_in == rev_str):
     print(usr_in,'is palindrome as',rev_str)
 else:
     print(usr_in,'is not palindrome as',rev_str)
+
+# using recursion
+def palindrome(s):
+    if len(s) <= 1:
+        return True
+    if s[0] == s[-1]:
+        return palindrome(s[1:-1])
+    else:
+        return False
+
+print(palindrome(usr_in))
