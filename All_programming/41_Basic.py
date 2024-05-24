@@ -9,5 +9,14 @@ for i in range(len(a)):
     else:
         b.append(a[i])
         c=c+''.join(a[i])
-print(b)
 print(c)
+
+# Dynamic input 
+a="!@#$%^&*()_+{}:\'\"<>?-=[];,./"
+special_chars=list(a)
+usr_input = input("Enter a string")
+new_string = ""
+for char in usr_input:
+    if char not in special_chars:
+        new_string+=''.join(char)
+print(new_string)
