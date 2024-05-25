@@ -11,3 +11,15 @@ for item in vowel:
     print(item,count)        
 
 #################################################
+vowels = 'aeiou'
+string = string.casefold()
+
+# make a dictionary with each vowel a key and value 0
+count = {}.fromkeys(vowels,0)
+
+for char in string:
+    if char in count:
+        count[char] +=1
+print(count)
+
+###################################################
