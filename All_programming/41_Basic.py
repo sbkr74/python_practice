@@ -12,7 +12,7 @@ for i in range(len(string_list)):
 print(c)
 #####################################################
 # Dynamic input 
-a="!@#$%^&*()_+{}:\'\"<>?-=[];,./"
+a="`~!@#$%^&*()_+{}:\'\"<>?-=[];,./"
 special_chars=list(a)
 usr_input = input("Enter a string")
 new_string = ""
@@ -26,5 +26,6 @@ string = '12#$56&*90!@@(87^%43@!'
 new_string_list = list(string)
 for ele in new_string_list:
     if ele.isalnum():
-        s+=''.join(ele)
+        # s+=''.join(ele)
+        s+=ele
 print(s)
