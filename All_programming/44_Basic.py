@@ -23,3 +23,10 @@ for char in string:
 print(count)
 
 ###################################################
+from collections import Counter
+# Count all characters in the string
+char_count = Counter(string)
+
+# Filter counts to include only vowels
+vowel_count = {char: char_count[char] for char in vowels}
+print(vowel_count)
