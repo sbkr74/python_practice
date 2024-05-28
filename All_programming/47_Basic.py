@@ -3,7 +3,7 @@
 import hashlib
 
 def hash_file(filename):
-    h = hashlib.sha1()
+    h = hashlib.md5()
 
     with open(filename,'rb') as file:
         chunk = 0
@@ -12,5 +12,5 @@ def hash_file(filename):
             h.update(chunk)
     return h.hexdigest()
 
-result = hash_file(r"All_programming\body.txt")
+result = hash_file(r"All_programming\rolex.mp3")
 print(result)
