@@ -24,6 +24,16 @@ class calculator():
     def sub(self,a):
         self.n.append(a)
         return sum(self.n)
+    def mult(self,a):
+        act = sum(self.n)*a
+        self.n.clear()
+        self.n.append(act)
+        return act
+    def div(self,a):
+        act = sum(self.n)//a
+        self.n.clear()
+        self.n.append(act)
+        return act
     def result(self):
         return sum(self.n)
 
@@ -33,7 +43,9 @@ while choice != 0:
     print("0. Exit")
     print("1. addition")
     print("2. substration")
-    print("3. result")
+    print("3. multiplication")
+    print("4. division")
+    print("5. result")
 
     choice = int(input("Enter choice: "))
 
@@ -42,8 +54,14 @@ while choice != 0:
 
     elif choice == 2:
         obi.sub(int(input("enter negative number: ")))
-    
+
     elif choice == 3:
+        obi.mult(int(input("num: ")))
+
+    elif choice == 4:
+        obi.div(int(input("num: ")))
+    
+    elif choice == 5:
         print(obi.result())
     
     elif choice == 0:
