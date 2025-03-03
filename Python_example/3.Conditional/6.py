@@ -1,15 +1,15 @@
 # perfect square
 print("Program to check for perfect square.")
-x = int(input("Enter a number: "))
-i = 2
+num = int(input("Enter a number: "))
+digit = 1
 flag = 0
-while i<x//2:
-    if x//i==i:
-        print(x,"is perfect square of",i)
+while digit<=num//2:
+    if num/digit==digit:
+        print(num,"is perfect square of",digit)
         flag = 1
         break
     else:
-        i+=1
-        
+        digit+=1
+
 if flag == 0:
-    print(x,"is not perfect square.")
+    print(num,"is not perfect square.")
