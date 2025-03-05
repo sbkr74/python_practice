@@ -4,7 +4,8 @@ rollno = int(input("Enter roll no: "))
 phy = int(input("enter marks of physics: "))
 che = int(input("enter marks of chemistry: "))
 maths = int(input("enter marks of mathematics: "))
-per = round((phy+che+maths)/3,2)
+total = (phy+che+maths)
+per = round(total/3,2)
 grade = None
 
 if per < 40:
@@ -19,12 +20,10 @@ else:
     print("Recheck the marks as it cannot cross 100 in any of one subjects")
 
 print("\nMarsheet")
-print(f'''-------------------
-| Rollno: {rollno}     |
-| Physics: {phy}     |
-| Chemistry: {che}   |
-| Maths: {maths}       |
-| percentage: {per}|
-| Grade: {grade}       |
--------------------
-''')
+print(f"Rollno: {rollno}")
+print(f"Physics: {phy}")
+print(f"Chemistry: {che}")
+print(f"Maths: {maths}")
+print(f"Total: {total}")
+print(f"percentage: {per}")
+print(f"Grade: {grade}")
