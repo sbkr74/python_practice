@@ -1,6 +1,7 @@
 # nested-if example
 
 usr_in = int(input("1.Bike\n2.Car\nChoose from above: "))
+msg = "No details available."
 if usr_in == 1:
     category = int(input("1.Superbike\n2.Sportsbike\n3.Offroads\n4.ATVs\nChoose from above: "))
     if category == 1:
@@ -21,7 +22,7 @@ if usr_in == 1:
             print("continental 650 ->$13k")
             print("bullet 500-> $11k")
         else:
-            print("No details available.")
+            print(msg)
     elif category == 2:
         brands = int(input("1.Suzuki\n2.Yamaha\n3.Honda\n4.TVS\n5.Bajaj\6.Hero\nChoose from above: "))
         if brands == 1:
@@ -45,7 +46,7 @@ if usr_in == 1:
             print("ZXR ->$8k")
             print("Mavrick 440-> $11k")
         else:
-            print("No details available.")
+            print(msg)
     elif category == 3:
         brands = int(input("1.Ducati\n2.BMW\n3.Hero\nChoose from above: "))
         if brands == 1:
@@ -58,11 +59,11 @@ if usr_in == 1:
             print("impulse ->  $7k")
             print("xpluse -> $8k")
         else:
-            print("No details available.")
+            print(msg)
     elif category == 4:
         print("ATV -> Staring $13k")
     else:
-        print("No details available.")
+        print(msg)
 elif usr_in == 2:
     print("currently no details available.")
     print("Upcoming brands will be :-\nFerrari\nLamborgini\nRoyals Royce\nLandRover\nand so on...")
