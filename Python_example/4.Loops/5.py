@@ -11,3 +11,14 @@ while True:
 
 for i in range(1,num+1):
     print(i*i,end=" ")
+
+print("\nAnother approach")
+# Using Math module
+from math import pow
+
+for i in range(1,num+1):
+    print(int(pow(i,2)),end=" ")
+
+# Note: Using pow() we can print cubic as well as quadratic or power of n.
+# just use pow(num,n)
+# where num will integers of numbers and n will power of that integer.
